@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 실시간 피드백 리얼AI문제집 -->
+
+<head>
+    <title>Syntax Realtime Feedback AT Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700;900&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEHE87LJHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KEHE87LJHB');
+    </script>
+</head>
+
+<script id="source" type='module' crossorigin></script>
+
+<script>
+    let source = "./js/sample.js"
+    let current_timestamp = new Date().getTime();
+    source += `?time=${current_timestamp}`;
+    document.getElementById("source").src = source;
+</script>
+
+<body style="margin:0%; padding:0%; font-family:Noto Sans KR;  background-color: rgb(255, 255, 255); user-select: none;">
+
+</body>
+
+</html>
