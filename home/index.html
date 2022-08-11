@@ -28,7 +28,8 @@
 <script id="source" type='module' crossorigin></script>
 
 <script>
-    let source = "./js/sample.js"
+    // let source = "./js/sample.js"
+    let source = "./build/index.js"
     let current_timestamp = new Date().getTime();
     source += `?time=${current_timestamp}`;
     document.getElementById("source").src = source;
